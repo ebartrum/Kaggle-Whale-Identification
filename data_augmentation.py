@@ -11,7 +11,7 @@ def random_rotate(image, sigma=10):
     angle = sigma * normal()
     return rotate(image, angle, reshape=False)
 
-def random_translate(image, sigma=10):
+def random_translate(image, sigma=3):
     horizontal_shift = sigma * normal()
     vertical_shift = sigma * normal()   
     image = shift(image, [vertical_shift, horizontal_shift])
